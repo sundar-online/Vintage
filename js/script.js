@@ -751,7 +751,7 @@ document.addEventListener("click", e => {
   if (a) {
     const t = document.getElementById(a.dataset.t);
     if (t) {
-      const card = t.querySelector(".card, .pj, .tst, [data-step]");
+      const card = t.querySelector(".card, .pj, .tc, .tst, [data-step]");
       let step = t.id === "hrow" ? Math.min(innerWidth * 0.82, 546) : 320;
       if (card) step = card.getBoundingClientRect().width + 24;
       const target = Math.max(0, Math.min(t.scrollLeft + a.dataset.d * step, t.scrollWidth - t.clientWidth));
