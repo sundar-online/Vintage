@@ -1031,16 +1031,10 @@ function tick() {
     }
   }
   if (near(offerS)) {
-    if (innerWidth > 960 && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      const p = prog(offerS);
-      const total = ocs.length || 8;
-      ocs.forEach((c, j) => {
-        const start = (j / total) * 0.45, end = start + 0.22;
-        const s = p >= 0.75 ? 1 : clamp((p - start) / (end - start));
-        c.style.opacity = s;
-        c.style.transform = p >= 0.75 ? "" : `translateY(${(1 - s) * 28}px)`;
-      });
-    }
+    ocs.forEach(c => {
+      c.style.opacity = "1";
+      c.style.transform = "none";
+    });
   }
 }
 function size() { tick() }

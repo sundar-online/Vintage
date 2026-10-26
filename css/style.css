@@ -1799,11 +1799,13 @@
       font-size: 12px;
     }
 
-    /* offer (pinned scroll, unique design) */
+    /* offer (What We Offer - compact, seamless section) */
     .offer {
-      height: 220vh;
+      height: auto;
       position: relative;
       background: #ffffff;
+      padding: 44px 0 54px;
+      overflow: hidden;
     }
 
     .offer::before {
@@ -1819,16 +1821,15 @@
     }
 
     .offer .stick {
-      position: sticky;
-      top: 0;
-      height: 100vh;
+      position: relative;
+      height: auto;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 20px;
-      padding: 94px 4vw 20px;
+      justify-content: flex-start;
+      gap: 22px;
+      padding: 0 4vw;
       color: var(--ink);
     }
 
@@ -1838,7 +1839,7 @@
     }
 
     .offer .ot h2 {
-      font-size: clamp(28px, 3.8vw, 48px);
+      font-size: clamp(28px, 3.8vw, 44px);
       color: var(--navy);
       margin: 0;
       line-height: 1.15;
@@ -1874,8 +1875,10 @@
       box-shadow: 0 6px 20px rgba(13, 13, 128, 0.08);
       overflow: hidden;
       cursor: pointer;
+      opacity: 1;
+      transform: none;
       transition: transform .35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow .35s ease, border-color .35s ease;
-      will-change: transform, opacity;
+      will-change: transform, box-shadow;
     }
 
     .oc img {
