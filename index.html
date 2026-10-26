@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/main/favicon-32x32.png">
   <link rel="icon" type="image/jpeg" href="./assets/main/Logo.jpg">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/main/apple-touch-icon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Work+Sans:wght@400;500;600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -17,7 +17,8 @@
 <body>
   <header id="hd">
     <div class="nav">
-      <a href="#top" class="brand"><img src="./assets/main/Logo.jpg" alt="Vintage logo"><span><b>Vintage</b><small>REALTORS
+      <a href="#top" class="brand"><img src="./assets/main/Logo.jpg"
+          alt="Vintage logo"><span><b>Vintage</b><small>REALTORS
             &amp;
             PROMOTERS</small></span></a>
       <ul class="nav-links">
@@ -114,33 +115,7 @@
       </div>
     </div>
 
-    <form class="search" onsubmit="return false">
-      <input placeholder="Search property, project, area" aria-label="Search">
-      <select aria-label="City">
-        <option>City</option>
-        <option>Chennai</option>
-        <option>Kanchipuram</option>
-      </select>
-      <select aria-label="Area">
-        <option>Area</option>
-        <option>Arumbakkam</option>
-        <option>Perambur</option>
-        <option>Velachery</option>
-      </select>
-      <select aria-label="Type">
-        <option>All types</option>
-        <option>Apartment</option>
-        <option>Villa</option>
-        <option>Plot</option>
-      </select>
-      <select aria-label="Budget">
-        <option>Max price</option>
-        <option>Under ₹50 L</option>
-        <option>₹50 L – 1 Cr</option>
-        <option>Above ₹1 Cr</option>
-      </select>
-      <button class="btn">Search</button>
-    </form>
+
 
     <div id="rows"></div>
 
@@ -153,9 +128,11 @@
             <span class="welcome-tag">About Vintage Realtors &amp; Promoters</span>
             <h2>Your Property Dreams. <span>Our Local Expertise.</span></h2>
             <div class="welcome-text">
-              <p>At <strong>Vintage Realtors &amp; Promoters</strong>, we believe that finding the right property should be an achievable and confident experience for everyone. With over 4 years of expertise in the real estate field, we help individuals, families, and investors explore property opportunities that align with their budgets, goals, and future aspirations.</p>
-              <p>With a focus on affordable property options and customer-oriented guidance, we strive to make real estate more accessible by helping our customers discover suitable residential plots, land, homes, and investment opportunities across South Chennai.</p>
-              <p>Having served 50+ customers, we continue to build our business around personalised assistance, local market knowledge, and a commitment to helping people make informed property decisions.</p>
+              <p>With <strong>4+ years of expertise</strong> and over <strong>50+ happy families served</strong>,
+                Vintage Realtors &amp; Promoters helps buyers and investors discover verified residential plots, lands,
+                and homes tailored to their goals across South Chennai.</p>
+              <p>We combine budget-conscious options with transparent legal guidance and dedicated support, making your
+                property journey clear, accessible, and confident.</p>
             </div>
             <div class="welcome-cta">
               <a class="btn" href="#projects">View our projects ↗</a>
@@ -165,7 +142,9 @@
 
           <div class="welcome-media">
             <div class="welcome-img-card">
-              <img src="assets/main/about-us.jpg" alt="Modern luxury residential community by Vintage Realtors &amp; Promoters" loading="lazy" decoding="async">
+              <img src="assets/main/about-us.jpg"
+                alt="Modern luxury residential community by Vintage Realtors &amp; Promoters" loading="lazy"
+                decoding="async">
               <div class="welcome-badge">
                 <b>4+ Years of Real Estate Expertise</b>
                 <span>Discover premium residential plots &amp; homes across South Chennai</span>
@@ -177,22 +156,48 @@
         <!-- STATS HIGHLIGHTS (Preserves data-n count-up animation) -->
         <div class="stg welcome-stats">
           <div class="st" tabindex="0">
-            <div class="st-icon">👥</div>
+            <div class="st-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" width="22" height="22">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
             <strong><b data-n="50" style="font-weight:400">0</b><em>+</em></strong>
             <span>Happy customers served</span>
           </div>
           <div class="st" tabindex="0">
-            <div class="st-icon">🏆</div>
+            <div class="st-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" width="22" height="22">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+            </div>
             <strong><b data-n="4" style="font-weight:400">0</b><em>+</em></strong>
             <span>Years of field expertise</span>
           </div>
           <div class="st" tabindex="0">
-            <div class="st-icon">🛡️</div>
+            <div class="st-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" width="22" height="22">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
             <strong><b data-n="100" style="font-weight:400">0</b><em>%</em></strong>
             <span>Clear title verification</span>
           </div>
           <div class="st" tabindex="0">
-            <div class="st-icon">📍</div>
+            <div class="st-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" width="22" height="22">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
             <strong><b data-n="25" style="font-weight:400">0</b><em>+</em></strong>
             <span>South Chennai prime areas</span>
           </div>
@@ -201,34 +206,56 @@
         <!-- OUR STORY, OUR MISSION & OUR VISION -->
         <div class="welcome-grid-lower">
           <!-- OUR STORY -->
-          <article class="welcome-story-card">
-            <div class="card-kicker">Background &amp; Philosophy</div>
+          <article class="welcome-story-card" tabindex="0">
+            <div class="card-kicker">
+              <svg class="kicker-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+              <span>Background &amp; Philosophy</span>
+            </div>
             <h3>Our Story</h3>
-            <p>Real estate is more than buying and selling properties — it is about helping people find a place to call home, identify investment opportunities, and plan for the future.</p>
-            <p>At <strong>Vintage Realtors &amp; Promoters</strong>, we understand that every customer has different requirements, financial priorities, and long-term ambitions. That is why we focus on understanding individual needs and presenting relevant property options rather than taking a one-size-fits-all approach.</p>
-            <p>From first-time homebuyers to experienced land investors and property owners, we aim to make every property journey more convenient, transparent, and customer-focused.</p>
+            <p>Real estate is more than transactions — it's about helping you find a home and build long-term value.
+              Instead of one-size-fits-all sales, we tailor our property shortlists to your exact budget, long-term
+              goals, and legal peace of mind, making your property journey transparent and stress-free.</p>
           </article>
 
           <!-- MISSION & VISION -->
           <div class="welcome-mv-col">
             <!-- OUR MISSION -->
-            <article class="mv-card mission">
+            <article class="mv-card mission" tabindex="0">
               <div class="mv-top">
-                <span class="mv-icon">🎯</span>
+                <span class="mv-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" width="22" height="22">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="12" r="6" />
+                    <circle cx="12" cy="12" r="2" />
+                  </svg>
+                </span>
                 <span class="mv-badge">Core Purpose</span>
               </div>
               <h3>Our Mission</h3>
-              <p>To make property buying, selling, and investment opportunities more accessible through budget-conscious property options, personalised guidance, and a customer-first approach.</p>
+              <p>To provide accessible, budget-conscious real estate options across South Chennai with complete legal
+                transparency and genuine customer-first guidance.</p>
             </article>
 
             <!-- OUR VISION -->
-            <article class="mv-card vision">
+            <article class="mv-card vision" tabindex="0">
               <div class="mv-top">
-                <span class="mv-icon">🔭</span>
+                <span class="mv-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" width="22" height="22">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                  </svg>
+                </span>
                 <span class="mv-badge">Future Outlook</span>
               </div>
               <h3>Our Vision</h3>
-              <p>To become a trusted real estate partner across South Chennai by helping more people discover suitable properties, make informed decisions, and take confident steps towards their property goals.</p>
+              <p>To be South Chennai's most trusted real estate partner, empowering every homebuyer and investor to make
+                confident property decisions.</p>
             </article>
           </div>
         </div>
@@ -262,35 +289,36 @@
         <div class="bld" id="bld">
           <!-- Slide 0: Tell us what you need -->
           <div class="bld-slide on" data-slide="0">
-            <img class="bld-img" src="./assets/How its work/Tell us what you need.jpg"
-              alt="Tell us what you need" loading="eager" decoding="async">
+            <img class="bld-img" src="./assets/How it works/Tell us what you need.jpg" alt="Tell us what you need"
+              loading="eager" decoding="async">
             <div class="bld-shade"></div>
             <div class="fc" style="left:5%;top:12%"><b>Search smarter</b>Tell us your area and budget.</div>
             <div class="fc w" style="right:5%;bottom:12%"><b>100% Verified</b>Only clear title homes.</div>
           </div>
           <!-- Slide 1: Visit and compare -->
           <div class="bld-slide" data-slide="1">
-            <img class="bld-img" src="./assets/How its work/Visit and compare.jpg"
-              alt="Visit and compare" loading="lazy" decoding="async">
+            <img class="bld-img" src="./assets/How it works/Visit and compare.jpg" alt="Visit and compare"
+              loading="lazy" decoding="async">
             <div class="bld-shade"></div>
             <div class="fc w" style="left:5%;top:12%"><b>Guided site visits</b>Free tours with local experts.</div>
             <div class="fc" style="right:5%;bottom:12%"><b>Honest comparison</b>Compare prices and amenities.</div>
           </div>
           <!-- Slide 2: Close with confidence -->
           <div class="bld-slide" data-slide="2">
-            <img class="bld-img" src="./assets/How its work/Close with confidence.jpg"
-              alt="Close with confidence" loading="lazy" decoding="async">
+            <img class="bld-img" src="./assets/How it works/Close with confidence.jpg" alt="Close with confidence"
+              loading="lazy" decoding="async">
             <div class="bld-shade"></div>
             <div class="fc" style="left:5%;top:12%"><b>Clear title check</b>100% legal verification done.</div>
             <div class="fc w" style="right:5%;bottom:12%"><b>Transparent pricing</b>Zero hidden fees or surprises.</div>
           </div>
           <!-- Slide 3: Complete paper work and registration -->
           <div class="bld-slide" data-slide="3">
-            <img class="bld-img" src="./assets/How its work/Complete paper work and registration.jpg"
+            <img class="bld-img" src="./assets/How it works/Complete paper work and registration.jpg"
               alt="Complete paperwork and registration" loading="lazy" decoding="async">
             <div class="bld-shade"></div>
             <div class="fc w" style="left:5%;top:12%"><b>Documentation handled</b>Agreements and loan support.</div>
-            <div class="fc" style="right:5%;bottom:12%;background:var(--green)"><b>Keys in hand</b>Registration handled smoothly.</div>
+            <div class="fc" style="right:5%;bottom:12%;background:var(--green)"><b>Keys in hand</b>Registration handled
+              smoothly.</div>
           </div>
           <!-- Step Counter Badge -->
           <div class="bld-counter" aria-hidden="true">
@@ -311,7 +339,8 @@
         </div>
         <div class="og">
           <article class="oc" tabindex="0">
-            <img src="assets/offers/1 Site_Property Listing.jpg" alt="Site &amp; Property Listing" loading="lazy" decoding="async">
+            <img src="assets/offers/1 Site_Property Listing.jpg" alt="Site &amp; Property Listing" loading="lazy"
+              decoding="async">
             <div class="oc-bar">
               <span class="bar-num">01</span>
               <h3>Site &amp; Property Listing</h3>
@@ -330,7 +359,8 @@
           </article>
 
           <article class="oc" tabindex="0">
-            <img src="assets/offers/2 Negotiation Seller and Buyer.jpg" alt="Negotiation Seller and Buyer" loading="lazy" decoding="async">
+            <img src="assets/offers/2 Negotiation Seller and Buyer.jpg" alt="Negotiation Seller and Buyer"
+              loading="lazy" decoding="async">
             <div class="oc-bar">
               <span class="bar-num">02</span>
               <h3>Negotiation Support</h3>
@@ -368,7 +398,8 @@
           </article>
 
           <article class="oc" tabindex="0">
-            <img src="assets/offers/4 Sale Deal Assistance.jpg" alt="Sale Deal Assistance" loading="lazy" decoding="async">
+            <img src="assets/offers/4 Sale Deal Assistance.jpg" alt="Sale Deal Assistance" loading="lazy"
+              decoding="async">
             <div class="oc-bar">
               <span class="bar-num">04</span>
               <h3>Sale Deal Assistance</h3>
@@ -387,7 +418,8 @@
           </article>
 
           <article class="oc" tabindex="0">
-            <img src="assets/offers/5 Document Verification.jpg" alt="Document Verification" loading="lazy" decoding="async">
+            <img src="assets/offers/5 Document Verification.jpg" alt="Document Verification" loading="lazy"
+              decoding="async">
             <div class="oc-bar">
               <span class="bar-num">05</span>
               <h3>Document Verification</h3>
@@ -418,14 +450,16 @@
               </div>
               <div class="oc-body">
                 <h3>Home Loan Support</h3>
-                <p>Quick doorstep sanctioning with leading banks at competitive interest rates and minimal paperwork.</p>
+                <p>Quick doorstep sanctioning with leading banks at competitive interest rates and minimal paperwork.
+                </p>
               </div>
               <span class="oc-link">Enquire now ↗</span>
             </div>
           </article>
 
           <article class="oc" tabindex="0">
-            <img src="assets/offers/7 Registration Process Assistance.jpg" alt="Registration Process Assistance" loading="lazy" decoding="async">
+            <img src="assets/offers/7 Registration Process Assistance.jpg" alt="Registration Process Assistance"
+              loading="lazy" decoding="async">
             <div class="oc-bar">
               <span class="bar-num">07</span>
               <h3>Registration Assistance</h3>
@@ -466,7 +500,8 @@
     </section>
 
     <!-- HORIZONTAL PROJECTS -->
-    <section class="hz" id="projects">
+    <section class="hz" id="projects" data-channel-id="UCPUhZW4C322AlGa2xT1Kvpg"
+      data-channel-handle="@DreamHomesByVintage" data-api-key="" data-videos-api="">
       <div class="wrap">
         <div class="rh">
           <h2>Our projects</h2>
@@ -477,88 +512,133 @@
         </div>
       </div>
       <div class="hwrap">
-          <div class="hrow" id="hrow">
-            <a href="https://www.youtube.com/watch?v=CXubzeM54xs" data-yt="CXubzeM54xs" class="pj"
-              style="--yt:url('https://i.ytimg.com/vi/CXubzeM54xs/hq720.jpg')"><button class="play"
-                aria-label="Play Mahindra World City video">▶</button><small>Mahindra World City</small>
-              <h3>2 &amp; 3 BHK Luxury Homes</h3>
-            </a>
-            <a href="https://www.youtube.com/watch?v=moJdbu2uLqA" data-yt="moJdbu2uLqA" class="pj"
-              style="--yt:url('https://i.ytimg.com/vi/moJdbu2uLqA/hqdefault.jpg')"><button class="play"
-                aria-label="Play furnished homes video">▶</button><small>GST Road Chennai</small>
-              <h3>Fully Furnished A/C Homes</h3>
-            </a>
-            <a href="https://www.youtube.com/watch?v=4CcNfaAmMWY" data-yt="4CcNfaAmMWY" class="pj"
-              style="--yt:url('https://i.ytimg.com/vi/4CcNfaAmMWY/hq720.jpg')"><button class="play"
-                aria-label="Play Ambattur apartment video">▶</button><small>Ambattur Kallikuppam</small>
-              <h3>3 BHK New Premium Apartment</h3>
-            </a>
-            <a href="https://www.youtube.com/watch?v=L25QaONOTrg" data-yt="L25QaONOTrg" class="pj"
-              style="--yt:url('https://i.ytimg.com/vi/L25QaONOTrg/hqdefault.jpg')"><button class="play"
-                aria-label="Play Medavakkam house video">▶</button><small>Medavakkam</small>
-              <h3>Luxury Independent House</h3>
-            </a>
-            <a href="https://www.youtube.com/watch?v=Bywg1wuot3Y" data-yt="Bywg1wuot3Y" class="pj"
-              style="--yt:url('https://i.ytimg.com/vi/Bywg1wuot3Y/hqdefault.jpg')"><button class="play"
-                aria-label="Play Chengalpattu plot video">▶</button><small>Chengalpattu</small>
-              <h3>Low Budget Plots</h3>
-            </a>
-          </div>
+        <div class="hrow" id="hrow">
+          <a href="https://www.youtube.com/watch?v=pAA-Olu-ASU" data-yt="pAA-Olu-ASU" class="pj"
+            style="--yt:url('https://i.ytimg.com/vi/pAA-Olu-ASU/hq720.jpg')"
+            aria-label="Play Family &amp; Future video">
+            <button class="play" aria-hidden="true" tabindex="-1">▶</button>
+          </a>
+          <a href="https://www.youtube.com/watch?v=kLUfwc-KSPs" data-yt="kLUfwc-KSPs" class="pj"
+            style="--yt:url('https://i.ytimg.com/vi/kLUfwc-KSPs/hq720.jpg')" aria-label="Play Sithalapakkam flat video">
+            <button class="play" aria-hidden="true" tabindex="-1">▶</button>
+          </a>
+          <a href="https://www.youtube.com/watch?v=mY8FxLLH-Tc" data-yt="mY8FxLLH-Tc" class="pj"
+            style="--yt:url('https://i.ytimg.com/vi/mY8FxLLH-Tc/hq720.jpg')" aria-label="Play Madambakkam flat video">
+            <button class="play" aria-hidden="true" tabindex="-1">▶</button>
+          </a>
+          <a href="https://www.youtube.com/watch?v=GQfatPNbdf8" data-yt="GQfatPNbdf8" class="pj"
+            style="--yt:url('https://i.ytimg.com/vi/GQfatPNbdf8/hq720.jpg')" aria-label="Play Madambakkam tour video">
+            <button class="play" aria-hidden="true" tabindex="-1">▶</button>
+          </a>
+          <a href="https://www.youtube.com/watch?v=-8_XgPVXVVQ" data-yt="-8_XgPVXVVQ" class="pj"
+            style="--yt:url('https://i.ytimg.com/vi/-8_XgPVXVVQ/hq720.jpg')" aria-label="Play S.Kolathur flat video">
+            <button class="play" aria-hidden="true" tabindex="-1">▶</button>
+          </a>
         </div>
+      </div>
     </section>
 
-    <section class="tm" id="reviews" data-place-name="Vintage Realtors &amp; Promoters" data-reviews-api="">
+    <section class="tm" id="reviews" data-place-name="Vintage Realtors &amp; Promoters" data-place-id="" data-api-key="" data-reviews-api="">
       <div class="wrap">
         <div class="rh">
           <div class="rh-reviews-head">
             <h2>Our client testimonials</h2>
-            <a class="google-rating-badge" href="https://www.google.com/search?q=Vintage+Realtors+%26+Promoters+Chennai+Reviews" target="_blank" rel="noopener noreferrer" title="View Vintage Realtors &amp; Promoters on Google Reviews">
+            <a class="google-rating-badge"
+              href="https://www.google.com/search?q=Vintage+Realtors+%26+Promoters+Chennai+Reviews" target="_blank"
+              rel="noopener noreferrer" title="View Vintage Realtors &amp; Promoters on Google Reviews">
               <svg class="g-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                <path fill="#4285F4"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                <path fill="#34A853"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                <path fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                <path fill="#EA4335"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
               </svg>
               <span class="g-score">5.0</span>
               <span class="g-stars">★★★★★</span>
               <span class="g-label">Google Reviews</span>
-              <svg class="g-ext" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              <svg class="g-ext" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+              </svg>
             </a>
           </div>
-          <div><button class="ar" data-t="tt" data-d="-1" aria-label="Previous reviews">←</button><button class="ar" data-t="tt" data-d="1" aria-label="Next reviews">→</button>
+          <div><button class="ar" data-t="tt" data-d="-1" aria-label="Previous reviews">←</button><button class="ar"
+              data-t="tt" data-d="1" aria-label="Next reviews">→</button>
           </div>
         </div>
         <div class="track" id="tt"></div>
       </div>
     </section>
 
-    <section class="team ins">
+    <section class="team ins" id="team">
       <div class="wrap">
-        <div class="rh">
-          <h2>Meet our team</h2>
+        <div class="team-heading-wrap">
+          <h2 class="team-single-heading">Managing Director</h2>
         </div>
-        <div class="ig3">
-          <article class="ac rv">
-            <div class="ph"><img src="assets/Team Photos/team-1.jpg" alt="Vintage Homes team member" loading="lazy"
-                decoding="async"></div>
-            <div><small>Vintage Realtors &amp; Promoters</small>
-              <h3>Our team on site</h3>
+
+        <div class="directors-grid">
+          <!-- Profile 1 -->
+          <div class="director-group">
+            <div class="director-carousel" aria-label="Managing Director photo carousel">
+              <div class="carousel-track">
+                <img src="assets/How%20it%20works/director1%20belfinsamraj%201.jpg" alt="Belfin Sam Raj P."
+                  class="carousel-slide active" loading="lazy">
+                <img src="assets/How%20it%20works/director1%20belfinsamraj%202.jpg" alt="Belfin Sam Raj P."
+                  class="carousel-slide" loading="lazy">
+                <img src="assets/How%20it%20works/director1%20belfinsamraj%203.jpg" alt="Belfin Sam Raj P."
+                  class="carousel-slide" loading="lazy">
+                <img src="assets/How%20it%20works/director1%20belfinsamraj%204.jpg" alt="Belfin Sam Raj P."
+                  class="carousel-slide" loading="lazy">
+              </div>
+              <a href="https://www.instagram.com/belfin_sam_raj/" target="_blank" rel="noopener noreferrer"
+                class="director-ig-link" aria-label="Instagram Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <div class="carousel-dots">
+                <span class="c-dot active" data-index="0" aria-label="Photo 1"></span>
+                <span class="c-dot" data-index="1" aria-label="Photo 2"></span>
+                <span class="c-dot" data-index="2" aria-label="Photo 3"></span>
+                <span class="c-dot" data-index="3" aria-label="Photo 4"></span>
+              </div>
             </div>
-          </article>
-          <article class="ac rv">
-            <div class="ph"><img src="assets/Team Photos/team-2.jpg" alt="Vintage Homes team member" loading="lazy"
-                decoding="async"></div>
-            <div><small>Vintage Realtors &amp; Promoters</small>
-              <h3>Guiding every home journey</h3>
+            <h3 class="director-name">Belfin Sam Raj P.</h3>
+          </div>
+
+          <!-- Profile 2 -->
+          <div class="director-group">
+            <div class="director-carousel" aria-label="Managing Director photo carousel">
+              <div class="carousel-track">
+                <img src="assets/How%20it%20works/director2%20muthamil%201.jpg" alt="Muthamilselvan Annamalai"
+                  class="carousel-slide active" loading="lazy">
+                <img src="assets/How%20it%20works/director2%20muthamil%202.jpg" alt="Muthamilselvan Annamalai"
+                  class="carousel-slide" loading="lazy">
+                <img src="assets/How%20it%20works/director2%20muthamil%203.jpg" alt="Muthamilselvan Annamalai"
+                  class="carousel-slide" loading="lazy">
+                <img src="assets/How%20it%20works/director2%20muthamil%204.jpeg" alt="Muthamilselvan Annamalai"
+                  class="carousel-slide" loading="lazy">
+              </div>
+              <a href="https://www.instagram.com/muthamilselvan_annamalai/" target="_blank" rel="noopener noreferrer"
+                class="director-ig-link" aria-label="Instagram Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <div class="carousel-dots">
+                <span class="c-dot active" data-index="0" aria-label="Photo 1"></span>
+                <span class="c-dot" data-index="1" aria-label="Photo 2"></span>
+                <span class="c-dot" data-index="2" aria-label="Photo 3"></span>
+                <span class="c-dot" data-index="3" aria-label="Photo 4"></span>
+              </div>
             </div>
-          </article>
-          <article class="ac rv">
-            <div class="ph"><img src="assets/Team Photos/team-3.jpg" alt="Vintage Homes team member" loading="lazy"
-                decoding="async"></div>
-            <div><small>Vintage Realtors &amp; Promoters</small>
-              <h3>With you till the keys are yours</h3>
-            </div>
-          </article>
+            <h3 class="director-name">Muthamilselvan Annamalai</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -567,7 +647,8 @@
     <div class="wrap">
       <div class="cta rv" id="contact">
         <h2>Find your dream home today!</h2>
-        <p>Discover the perfect property tailored to your needs with our experts. Fill out the enquiry below to connect instantly on WhatsApp.</p>
+        <p>Discover the perfect property tailored to your needs with our experts. Fill out the enquiry below to connect
+          instantly on WhatsApp.</p>
 
         <!-- ENQUIRY FORM -->
         <form class="enquiry-form" id="enquiryForm" data-whatsapp="910000000000" novalidate>
@@ -575,14 +656,16 @@
             <!-- Name -->
             <div class="form-group">
               <label for="enqName">Your Name <span class="req">*</span></label>
-              <input type="text" id="enqName" name="name" placeholder="Enter your full name" required autocomplete="name">
+              <input type="text" id="enqName" name="name" placeholder="Enter your full name" required
+                autocomplete="name">
               <span class="form-err" id="enqNameErr"></span>
             </div>
 
             <!-- Email -->
             <div class="form-group">
               <label for="enqEmail">Email Address <span class="req">*</span></label>
-              <input type="email" id="enqEmail" name="email" placeholder="name@example.com" required autocomplete="email">
+              <input type="email" id="enqEmail" name="email" placeholder="name@example.com" required
+                autocomplete="email">
               <span class="form-err" id="enqEmailErr"></span>
             </div>
 
@@ -597,8 +680,10 @@
             <div class="form-group">
               <label for="enqPropLink">Property Link <span class="opt">(Auto-fill)</span></label>
               <div class="input-with-btn">
-                <input type="text" id="enqPropLink" name="property_link" placeholder="Property link or name" autocomplete="off">
-                <button type="button" class="btn-autofill" id="enqAutoFillBtn" title="Auto-fill current property URL" aria-label="Auto-fill current property URL">Auto-fill</button>
+                <input type="text" id="enqPropLink" name="property_link" placeholder="Property link or name"
+                  autocomplete="off">
+                <button type="button" class="btn-autofill" id="enqAutoFillBtn" title="Auto-fill current property URL"
+                  aria-label="Auto-fill current property URL">Auto-fill</button>
               </div>
               <span class="form-err" id="enqPropLinkErr"></span>
             </div>
@@ -620,7 +705,8 @@
             <!-- Message -->
             <div class="form-group form-group-full">
               <label for="enqMsg">Message <span class="opt">(Optional)</span></label>
-              <textarea id="enqMsg" name="message" rows="3" placeholder="Tell us about your requirements (budget, area, 2/3 BHK, etc.)"></textarea>
+              <textarea id="enqMsg" name="message" rows="3"
+                placeholder="Tell us about your requirements (budget, area, 2/3 BHK, etc.)"></textarea>
               <span class="form-err" id="enqMsgErr"></span>
             </div>
           </div>
@@ -629,7 +715,8 @@
           <div class="form-actions">
             <button type="submit" class="btn enq-btn-send" id="enqSubmitBtn">
               <svg class="wa-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.09 7.09 8.87 7.33C8.65 7.57 8.02 8.16 8.02 9.36C8.02 10.56 8.9 11.71 9.02 11.88C9.14 12.05 10.76 14.54 13.23 15.61C13.82 15.86 14.28 16.02 14.64 16.13C15.23 16.32 15.77 16.29 16.2 16.23C16.68 16.16 17.68 15.63 17.88 15.05C18.09 14.47 18.09 13.98 18.03 13.87C17.96 13.77 17.8 13.71 17.54 13.58C17.29 13.46 16.04 12.84 15.81 12.76C15.58 12.67 15.41 12.63 15.24 12.88C15.07 13.14 14.59 13.71 14.45 13.88C14.3 14.05 14.16 14.07 13.91 13.94C13.65 13.82 12.83 13.55 11.85 12.68C11.09 12 10.57 11.16 10.42 10.91C10.28 10.66 10.41 10.52 10.54 10.39C10.65 10.28 10.79 10.1 10.92 9.95C11.05 9.8 11.09 9.69 11.18 9.52C11.26 9.35 11.22 9.21 11.16 9.08C11.09 8.96 10.61 7.78 10.41 7.29C10.21 6.81 10.01 6.88 9.85 6.87C9.7 6.87 9.53 6.87 9.53 7.03Z"/>
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.09 7.09 8.87 7.33C8.65 7.57 8.02 8.16 8.02 9.36C8.02 10.56 8.9 11.71 9.02 11.88C9.14 12.05 10.76 14.54 13.23 15.61C13.82 15.86 14.28 16.02 14.64 16.13C15.23 16.32 15.77 16.29 16.2 16.23C16.68 16.16 17.68 15.63 17.88 15.05C18.09 14.47 18.09 13.98 18.03 13.87C17.96 13.77 17.8 13.71 17.54 13.58C17.29 13.46 16.04 12.84 15.81 12.76C15.58 12.67 15.41 12.63 15.24 12.88C15.07 13.14 14.59 13.71 14.45 13.88C14.3 14.05 14.16 14.07 13.91 13.94C13.65 13.82 12.83 13.55 11.85 12.68C11.09 12 10.57 11.16 10.42 10.91C10.28 10.66 10.41 10.52 10.54 10.39C10.65 10.28 10.79 10.1 10.92 9.95C11.05 9.8 11.09 9.69 11.18 9.52C11.26 9.35 11.22 9.21 11.16 9.08C11.09 8.96 10.61 7.78 10.41 7.29C10.21 6.81 10.01 6.88 9.85 6.87C9.7 6.87 9.53 6.87 9.53 7.03Z" />
               </svg>
               <span>Send via WhatsApp</span>
             </button>
@@ -677,9 +764,12 @@
     <div class="wrap">
       <div class="fg">
         <div class="fg-col fg-brand">
-          <a href="#top" class="brand" style="color:#fff"><img src="./assets/main/Logo.jpg" alt="Vintage Realtors &amp; Promoters logo"><span><b>Vintage</b></span></a>
-          <p class="fg-about">Believe. Achieve. Succeed. Trusted realtors and promoters for homes, plots and projects.</p>
-          <address class="fg-address">Second Floor, Plot No. 6/14, Guruswamy Nagar Main Road, Sivagami Nagar, Gowriwakkam, Sembakkam, T. Tambaram, Tamil Nadu 600073.</address>
+          <a href="#top" class="brand" style="color:#fff"><img src="./assets/main/Logo.jpg"
+              alt="Vintage Realtors &amp; Promoters logo"><span><b>Vintage</b></span></a>
+          <p class="fg-about">Believe. Achieve. Succeed. Trusted realtors and promoters for homes, plots and projects.
+          </p>
+          <address class="fg-address">Second Floor, Plot No. 6/14, Guruswamy Nagar Main Road, Sivagami Nagar,
+            Gowriwakkam, Sembakkam, T. Tambaram, Tamil Nadu 600073.</address>
         </div>
         <div class="fg-col">
           <h4>Explore Our Projects</h4>
@@ -704,7 +794,8 @@
           <h4>Contact</h4>
           <ul class="fg-contact">
             <li><a href="tel:+919884997474">📞 98849 97474</a></li>
-            <li><a href="https://wa.me/919940666458" target="_blank" rel="noopener">💬 99406 66458 <small>(WhatsApp)</small></a></li>
+            <li><a href="https://wa.me/919940666458" target="_blank" rel="noopener">💬 99406 66458
+                <small>(WhatsApp)</small></a></li>
             <li><a href="#contact">Book a site visit ↗</a></li>
           </ul>
           <ul class="social fg-social">
@@ -719,7 +810,8 @@
               </a>
             </li>
             <li style="--i:#ff0000; --j:#b80000">
-              <a href="https://www.youtube.com/@DreamHomesByVintage" target="_blank" rel="noopener" aria-label="YouTube">
+              <a href="https://www.youtube.com/@DreamHomesByVintage" target="_blank" rel="noopener"
+                aria-label="YouTube">
                 <svg viewBox="0 0 24 24">
                   <path
                     d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z" />
@@ -755,4 +847,5 @@
   </div>
   <script src="./js/script.js"></script>
 </body>
+
 </html>
