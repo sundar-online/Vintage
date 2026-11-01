@@ -137,11 +137,11 @@
         if (cue) cue.style.opacity = 1 - cl(p / 0.03);
         if (ui) ui.style.opacity = cl((p - 0.12) / 0.04);
 
+        /* Story cards visibility and slide-in */
         for (var k = 0; k < cards.length; k++) {
           var a = S[k], b = S[k + 1] + (k === cards.length - 1 ? 1 : 0), o = cl(Math.min((p - a) / 0.04, (b - p) / 0.04));
           cards[k].style.opacity = o;
           cards[k].style.transform = 'translateY(' + ((1 - o) * 14) + 'px)';
-          cards[k].style.pointerEvents = o > 0.5 ? 'auto' : 'none';
         }
       }
       requestAnimationFrame(tick);
