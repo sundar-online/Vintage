@@ -909,15 +909,15 @@ function setHeroSlide(idx) {
   }, 250);
 }
 
-let heroTimer = setInterval(() => {
+let heroTimer = heroSlides.length ? setInterval(() => {
   setHeroSlide(heroIndex + 1);
-}, 4500);
+}, 4500) : null;
 
 heroDotBtns.forEach(btn => {
   btn.addEventListener("click", () => {
-    clearInterval(heroTimer);
+    if (heroTimer) clearInterval(heroTimer);
     setHeroSlide(+btn.dataset.slide);
-    heroTimer = setInterval(() => setHeroSlide(heroIndex + 1), 4500);
+    if (heroSlides.length) heroTimer = setInterval(() => setHeroSlide(heroIndex + 1), 4500);
   });
 });
 
@@ -1007,7 +1007,7 @@ function tick() {
   let cur = "top";
   for (const s of tracked) { if (s.getBoundingClientRect().top <= 160) cur = s.id; }
   navLinks.forEach(l => l.classList.toggle("active", l.getAttribute("href") === "#" + cur));
-  if (near(hero)) {
+  if (frame && hTop && hero && near(hero)) {
     const p = ease(prog(hero)), vw = innerWidth, vh = innerHeight, mob = vw <= 760;
     const startTop = mob ? (hTop.offsetTop + hTop.offsetHeight + 24) : 0;
     frame.style.top = mob ? ((1 - p) * startTop) + "px" : "";
@@ -1017,10 +1017,13 @@ function tick() {
     frame.style.height = (mob ? 58 + 42 * p : 42 + 58 * p) + "vh";
     frame.style.borderRadius = (32 * (1 - p)) + "px " + (32 * (1 - p)) + "px 0 0";
     hTop.style.transform = `translateY(${-p * 90}px) scale(${1 - p * .12})`; hTop.style.opacity = 1 - p * 1.8;
-    hIn.style.opacity = clamp((p - .55) * 2.6); hIn.style.transform = `translateY(${(1 - clamp((p - .55) * 2.6)) * 40}px)`;
-    const sh = mob ? 0 : p * 24; heroImg.style.left = sh + "%"; heroImg.style.width = (100 - sh) + "%"; heroImg.style.bottom = mob ? (20 + p * 18) + "%" : ""; shade.style.opacity = clamp((p - .5) * 2.2);
-    sun.style.transform = `translateY(${-p * 120}px) scale(${1 + p * .5})`;
-    c1.style.transform = `translateY(${-p * 140}px)`; c2.style.transform = `translateY(${-p * 70}px) rotate(${p * 6}deg)`; c3.style.transform = `translate(${p * 60}px,${-p * 40}px)`;
+    if (hIn) { hIn.style.opacity = clamp((p - .55) * 2.6); hIn.style.transform = `translateY(${(1 - clamp((p - .55) * 2.6)) * 40}px)`; }
+    const sh = mob ? 0 : p * 24; if (heroImg) { heroImg.style.left = sh + "%"; heroImg.style.width = (100 - sh) + "%"; heroImg.style.bottom = mob ? (20 + p * 18) + "%" : ""; }
+    if (shade) shade.style.opacity = clamp((p - .5) * 2.2);
+    if (sun) sun.style.transform = `translateY(${-p * 120}px) scale(${1 + p * .5})`;
+    if (c1) c1.style.transform = `translateY(${-p * 140}px)`;
+    if (c2) c2.style.transform = `translateY(${-p * 70}px) rotate(${p * 6}deg)`;
+    if (c3) c3.style.transform = `translate(${p * 60}px,${-p * 40}px)`;
   }
   if (near(how) && innerWidth > 960) {
     if (!isProgrammaticHowScroll) {
